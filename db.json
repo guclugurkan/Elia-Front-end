@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1739195855522,
+      "firstName": "Gurkan",
+      "lastName": "Guclu",
+      "serviceCenter": "Laeken",
+      "phoneNumber": "0483111232",
+      "password": "azer"
+    },
+    {
+      "id": 1739195947438,
+      "firstName": "Gurkan",
+      "lastName": "Guclu",
+      "serviceCenter": "Laeken",
+      "phoneNumber": "0483111231",
+      "password": "azer"
+    }
+  ]
+}
