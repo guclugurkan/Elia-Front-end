@@ -31,7 +31,20 @@ const Login = () => {
             tmpErrors.phoneNumber = "This user doesn't exist !"
         }
         try {
-            const response = await fetch(`http://localhost:3001/users?phoneNumber=${loginData.phoneNumber}`);
+            // const response = await fetch(`http://localhost:8000/auth/login`,
+            //     { method: 'POST',
+            //         headers: { 
+            //             'Content-Type' : 'application/json'
+
+            //         },
+            //         body : JSON.stringify({
+            //             phone: loginData.phoneNumber,
+            //             password: 'user'
+
+            //         })
+            //     }
+            // );
+            const response = await fetch(`http://localhost:3001/users?phoneNumber=${loginData.phoneNumber}`)
             const users = await response.json();
 
             if(users.length === 0) {
@@ -75,6 +88,7 @@ const Login = () => {
     return <div className="login-container">
         <h2>Login</h2>
         {loginForm}
+        <a href="/">Register</a>
     </div>
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
 
@@ -21,6 +22,7 @@ const Signup = () => {
      repPassword: ''
     });
   const [touched, setTouched] = useState({}); // state pour champ touché
+
  
    //  const [succesMessage, setSuccesMessage] = useState(null);
  //
@@ -198,6 +200,7 @@ const Signup = () => {
        <div className='signup-container'>
          <h2>Register</h2>
          {usersForm}
+         <a href="/login">Login</a>
        </div>
      );
 };
